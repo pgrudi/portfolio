@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Data - Piotr Grudzinski</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #2ecc71;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            color: #7f8c8d;
+            font-size: 1.2em;
+        }
+
+        /* Projects Grid */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h3 {
+            color: #2ecc71;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tool-logo {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+
+        .project-link {
+            display: inline-block;
+            background: #2ecc71;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .project-link:hover {
+            background: #27ae60;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="votre_photo_de_profil.jpg" alt="Piotr Grudzinski" class="profile-img">
+            <h1>Portfolio Data</h1>
+            <p class="tagline">Analyse, transformation et visualisation de données</p>
+        </header>
+
+        <main>
+            <section class="projects">
+                <!-- Projet 1 -->
+                <div class="project-card">
+                    <h3>Tinder Match Predictor</h3>
+                    <p>
+                        Ce projet explore les indicateurs clés pour prédire les "matchs" sur Tinder. À partir d'un jeu de données brut, j'ai effectué une analyse exploratoire et construit des visualisations interactives pour identifier les variables les plus influentes.
+                    </p>
+                    <a href="01-Speed_V3.html" class="project-link" target="_blank">Voir le projet</a>
+                    <div class="tools">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python" class="tool-logo">
+                        <img src="https://pandas.pydata.org/static/img/pandas.svg" alt="Pandas" class="tool-logo">
+                        <img src="https://seaborn.pydata.org/_images/logo-tall-lightbg.svg" alt="Seaborn" class="tool-logo">
+                        <img src="https://plotly.com/brandmark/plotly-logo.png" alt="Plotly" class="tool-logo">
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card">
+                    <h3>Aircraft Performance Insights</h3>
+                    <p>
+                        Ce notebook présente une analyse des performances des compagnies aériennes, en croisant modèles d'avions, aéroports et revenus par passager. Les données brutes ont été transformées et modélisées via dbt et Snowflake.
+                    </p>
+                    <a href="Aircraft.html" class="project-link" target="_blank">Voir le projet</a>
+                    <div class="tools">
+                        <img src="https://www.svgrepo.com/show/354428/snowflake.svg" alt="Snowflake" class="tool-logo">
+                        <img src="https://www.svgrepo.com/show/303231/dbt-logo.svg" alt="dbt" class="tool-logo">
+                        <img src="https://www.svgrepo.com/show/331760/sql-database-generic.svg" alt="SQL" class="tool-logo">
+                        <img src="https://deepnote.com/favicon.ico" alt="Deepnote" class="tool-logo">
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card">
+                    <h3>AI Takes My Photos</h3>
+                    <p>
+                        Application web de génération d'images via des modèles d'IA générative (Black Forest Labs et GPT-image-1). L'interface permet de soumettre des prompts et de recevoir des images générées automatiquement.
+                    </p>
+                    <a href="AITakesMyPhotos.html" class="project-link" target="_blank">Voir le projet</a>
+                    <div class="tools">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python" class="tool-logo">
+                        <img src="https://flask.palletsprojects.com/en/2.3.x/_images/flask-logo.png" alt="Flask" class="tool-logo">
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="project-card">
+                    <h3>Dashboard Décisionnel Power BI</h3>
+                    <p>
+                        Tableau de bord interactif réalisé avec Power BI, après ingestion et transformation des données brutes via Power Query. Visualisation des KPI et indicateurs clés pour la prise de décision.
+                    </p>
+                    <a href="PowerBI.pdf" class="project-link" target="_blank">Voir le projet</a>
+                    <div class="tools">
+                        <img src="https://powerbi.microsoft.com/pictures/shared/social/social-default-image.png" alt="Power BI" class="tool-logo">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Piotr Grudzinski - Tous droits réservés</p>
+        </footer>
+    </div>
+</body>
+</html>
